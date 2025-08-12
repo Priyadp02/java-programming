@@ -1,4 +1,4 @@
-//charAt
+//1.charAt
 import java.util.Scanner;
 class Main {
     public static void main(String[] args) {
@@ -11,7 +11,7 @@ class Main {
 }
 
 
-//codePointAt
+//2.codePointAt
 import java.util.Scanner;
 class Main {
     public static void main(String[] args) {
@@ -24,7 +24,7 @@ class Main {
 }
 
 
-//codePointBefore
+//3.codePointBefore
 import java.util.Scanner;
 class Main {
     public static void main(String[] args) {
@@ -39,7 +39,9 @@ class Main {
         System.out.println("The After Character is:"+ch2);
     }
 }
-//codePointCount
+
+
+//4.codePointCount
 import java.util.Scanner;
 class Main {
     public static void main(String[] args) {
@@ -52,7 +54,7 @@ class Main {
 }
 
 
-//compareTo
+//5.compareTo
 import java.util.Scanner;
 class Main {
     public static void main(String[] args) {
@@ -73,8 +75,8 @@ class Main {
         System.out.println("Result:"+ch4);
 
       
- //comparetoIgnorecase()
-  import java.util.Scanner;
+ //6.comparetoIgnorecase()
+import java.util.Scanner;
 class Main {
     public static void main(String[] args) {
         Scanner data = new Scanner(System.in);
@@ -90,3 +92,89 @@ class Main {
         data.close();
     }  
 }
+
+        
+//7.contentEquals
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner x = new Scanner(System.in);
+        System.out.println("Enter any String1:");
+        String str1 = x.nextLine();
+      
+        boolean my = str1.contains("Hello");
+        System.out.println(my);
+        
+        boolean mystr = str1.contentEquals("Hello");
+        System.out.println(mystr);
+    }
+}
+
+        
+//8. copyValueOf       
+ public class Main {
+    public static void main(String[] args) {
+        char[] data = {'H','E','L','L','O'};
+        
+        String str = String.copyValueOf(data, 0, 5);
+        System.out.println(str);
+
+        System.out.println(str.endsWith("H"));
+    }
+}  
+
+//user input
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a word: ");
+        String input = sc.nextLine();
+        char[] data = input.toCharArray();
+        String str = String.copyValueOf(data, 0, data.length);
+        System.out.println("String from char array: " + str);
+        System.out.print("Enter a letter to check if it ends with: ");
+        String endLetter = sc.nextLine();
+        System.out.println("Ends with '" + endLetter + "'? " + str.endsWith(endLetter));
+        sc.close();
+    }
+}
+
+        
+//string to char 
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter some text:");
+        String input = sc.nextLine();
+        char[] data = input.toCharArray();
+        String str = String.copyValueOf(data);
+        System.out.println("String from char array: " + str);
+        char[] charArray = str.toCharArray();
+        System.out.print("Char array from string: ");
+        for (char c : charArray) {
+            System.out.print(c + " ");
+        }
+        System.out.println();
+        String str2 = String.copyValueOf(charArray);
+        System.out.println("String again from char array: " + str2);
+        sc.close();
+    }
+}        
+
+        
+//9.equalIgnoreCase
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        String data = "hello";
+        String hi = "hi %s my age %d";
+        System.out.println(data.equalsIgnoreCase("hello"));
+        System.out.printf(hi, "hello", 20);
+    }
+}
+
+        
+//        
+        
