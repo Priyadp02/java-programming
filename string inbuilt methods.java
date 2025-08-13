@@ -1,4 +1,4 @@
-//1.charAt
+//charAt
 import java.util.Scanner;
 class Main {
     public static void main(String[] args) {
@@ -11,7 +11,7 @@ class Main {
 }
 
 
-//2.codePointAt
+//codePointAt
 import java.util.Scanner;
 class Main {
     public static void main(String[] args) {
@@ -24,7 +24,7 @@ class Main {
 }
 
 
-//3.codePointBefore
+//codePointBefore
 import java.util.Scanner;
 class Main {
     public static void main(String[] args) {
@@ -41,7 +41,7 @@ class Main {
 }
 
 
-//4.codePointCount
+//codePointCount
 import java.util.Scanner;
 class Main {
     public static void main(String[] args) {
@@ -54,7 +54,7 @@ class Main {
 }
 
 
-//5.compareTo
+//compareTo
 import java.util.Scanner;
 class Main {
     public static void main(String[] args) {
@@ -78,7 +78,7 @@ class Main {
 }
 
 
- //6.comparetoIgnorecase()
+ //comparetoIgnorecase()
 import java.util.Scanner;
 class Main {
     public static void main(String[] args) {
@@ -97,7 +97,7 @@ class Main {
 }
 
         
-//7.contentEquals
+//contentEquals
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
@@ -114,7 +114,7 @@ public class Main {
 }
 
         
-//8. copyValueOf       
+//copyValueOf       
  public class Main {
     public static void main(String[] args) {
         char[] data = {'H','E','L','L','O'};
@@ -167,7 +167,7 @@ public class Main {
 }        
 
         
-//9.equalIgnoreCase
+//equalIgnoreCase
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
@@ -179,7 +179,7 @@ public class Main {
 }
 
         
-//10.getChars       
+//getChars       
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
@@ -204,7 +204,7 @@ public class Main {
 }
 
         
-//11.regionMatches
+//regionMatches
 import java.util.Scanner;
 class Main {
     public static void main(String[] args) {
@@ -221,7 +221,7 @@ class Main {
 }       
 
         
-//12.replace,replaceAll,replaceFirst
+//replace,replaceAll,replaceFirst
 import java.util.Scanner;
 class Main {
     public static void main(String[] args) {
@@ -237,7 +237,7 @@ class Main {
 }
 
 
- //13.split     
+ //split     
  public class Main {
     public static void main(String[] args) {
         String x="Hello World";
