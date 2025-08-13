@@ -74,7 +74,10 @@ class Main {
         int ch4=str.compareTo(str1);
         System.out.println("Result:"+ch4);
 
-      
+    }
+}
+
+
  //6.comparetoIgnorecase()
 import java.util.Scanner;
 class Main {
@@ -199,5 +202,128 @@ public class Main {
         System.out.print(mystring);
  }
 }
+
         
+//11.regionMatches
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner data = new Scanner(System.in);
+        String a = "new world";
+        String y = " hello world";
+        String x = "hello|world|java";
+        System.out.println("hello".matches (x));
+        System.out.println("world".matches (x));
+        System.out.println("javascript".matches (x));
+        System.out.println(y.regionMatches(7,a,4,5));
         
+    }
+}       
+
+        
+//12.replace,replaceAll,replaceFirst
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner data = new Scanner(System.in);
+        String x = "hello";
+        String y = "hello devi hello";
+        System.out.println(x.replace('l','p'));
+        String a = "(?i)Hello";
+        System.out.println(y.replaceAll(a,"hi"));
+        String b = "Hello";
+        System.out.println(y.replaceFirst(b,"hi"));
+    }
+}
+
+
+ //13.split     
+ public class Main {
+    public static void main(String[] args) {
+        String x="Hello World";
+        String y="[,\\.\\s]";
+        String[] z=x.split(y);
+        for(String  s:z){
+        System.out.print(s);
+    }
+}
+}   
+
+        
+//userinput
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter a string: ");
+        String x = input.nextLine();
+        String y = "[,\\.\\s]"; 
+        String[] z = x.split(y);
+        for (String s : z) {
+            System.out.print(s);
+        }
+        input.close();
+    }
+}
+        
+
+//concat the split above
+import java.util.Scanner;  
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a string: ");
+        String x = sc.nextLine();
+        String y = "[\\.\\s]";  
+        String[] z = x.split(y);
+        String concatenated = "";
+        System.out.println("Split parts:");
+        for (String s : z) {
+            System.out.println(s);
+            concatenated += s;
+        }
+        System.out.println("Concatenated string: " + concatenated);
+    }
+}
+
+
+//startsWith
+import java.util.Scanner;  
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String x = "hello";
+        System.out.println(x.startsWith("hello"));
+        System.out.println(x.startsWith("he"));
+        
+    }
+}
+
+//userinput
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter a string: ");
+        String x = input.nextLine();
+        System.out.println(x.startsWith("hello"));
+        System.out.println(x.startsWith("he"));
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
